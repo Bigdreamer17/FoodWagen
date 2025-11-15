@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+  --primary-orange: #FF8A00;
+  --footer-dark: #1F1F1F;
+  --green-open: #10B981;
+  --blue-badge: #3B82F6;
+  --yellow-badge: #FCD34D;
+  --red-badge: #EF4444;
+  --gray-light: #F3F4F6;
+  --gray-medium: #9CA3AF;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary-orange);
+  --color-footer-dark: var(--footer-dark);
+  --color-green-open: var(--green-open);
+  --color-blue-badge: var(--blue-badge);
+  --color-yellow-badge: var(--yellow-badge);
+  --color-red-badge: var(--red-badge);
+  --color-gray-light: var(--gray-light);
+  --color-gray-medium: var(--gray-medium);
+
+  --font-sans: var(--font-source-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  /* Typography for food cards */
+  --rating-color: #FFB30E;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.food-slide-up {
+  animation: slideUp 300ms ease-out;
+}
+
+.food-input::placeholder {
+  color: #9E9E9E;
+}
+
+.food-input {
+  color: #000000;
+}
