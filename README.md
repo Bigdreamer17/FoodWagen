@@ -93,15 +93,7 @@ Run tests:
 npm test
 ```
 
-## Deployment
-
-### Vercel (Recommended)
-
-1. Push your code to GitHub
-2. Import your repository on [Vercel](https://vercel.com)
-3. Deploy!
-
-The project can also be deployed to Netlify or GitHub Pages.
+## [Deployment](https://food-wagen-eight.vercel.app)
 
 ## Features Implemented
 
